@@ -1,11 +1,12 @@
 {
 	"title": "Summary",
+	"author":"一网盟",
+	"language": "zh-hans",
 	"links": {
         "sidebar": {
             "Home": "https://yiwangmeng.cn"
         }
     },
-	"author":"一网盟",
 	"plugins" : [
 		"expandable-chapters",
 		"copy-code-button",
@@ -17,8 +18,7 @@
 		"-lunr", 
 		"-search", 
 		"search-pro",
-		"splitter",
-		"advanced-emoji"
+		"splitter"
 	],
 	"pluginsConfig": {	
 		"page-footer-ex": {
