@@ -1,16 +1,16 @@
-name: GitHub Pages for ${{ GITHUB_ACTOR }}.github.io
+name: Pages-Repository
 on:
   push:
     branches:
     - main #触发的分支 
 
 jobs:
-  main-to-gh-pages:
+  main-to-repo-pages:
     runs-on: ubuntu-latest
         
     steps:                          
     - name: checkout main
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         ref: main
 
@@ -19,7 +19,6 @@ jobs:
         baseURL=$(cat book.json | awk '/"Home": /' | awk '{print $2}' | sed "s|[\'\"]||g" | awk -F '//' '{print $2}' | sed "s|/||")
         if [[ $baseURL ]]; then
           echo "CNAME=$baseURL" >>$GITHUB_ENV
-          echo "baseURL is ${{ env.CNAME }}"
         else
           echo "Check baseURL setting in root book.json please."
           cat book.json
@@ -35,10 +34,12 @@ jobs:
           sed -i "s|${{ env.CNAME }}|${{ github.actor }}.github.io/$ACTION_REPO|" book.json
           cat book.json
         fi
-            
+
     - name: Install nodejs
       if: ${{ env.PAGE_REPO != 'true' }}
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v3
+      with:
+        node-version: 10
       
     - name: Install gitbook
       if: ${{ env.PAGE_REPO != 'true' }}

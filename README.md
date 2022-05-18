@@ -26,7 +26,7 @@
 
 **若无其他需求，可只修改邮箱。**
 
-```yml
+```yaml
 name: auto-generate-gitbook
 on:                                 #在main分支上进行push时触发  
   push:
@@ -62,7 +62,7 @@ jobs:
       env:
         TOKEN: ${{ secrets.TOKEN }}
         REF: github.com/${{github.repository}}
-        MYEMAIL: 1823636309@qq.com                  # ！！记得修改为自己邮箱
+        MYEMAIL: xxx@qq.com                  # ！！记得修改为自己邮箱
         MYNAME: ${{github.repository_owner}}          
       run: |
         cd _book
