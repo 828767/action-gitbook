@@ -89,7 +89,7 @@ jobs:
 	"title": "Summary",
     "links": {
         "sidebar": {
-            "Home": "https://wangzhebufangqi.github.io"
+            "Home": "https://yiwangmeng.cn"
         }
     },
 	"plugins" : [

@@ -2,10 +2,10 @@
 	"title": "Summary",
 	"links": {
         "sidebar": {
-            "Home": "https://wangzhebufangqi.github.io"
+            "Home": "https://yiwangmeng.cn"
         }
     },
-	"author":"wangzhebufangqi",
+	"author":"一网盟",
 	"plugins" : [
 		"expandable-chapters",
 		"copy-code-button",
@@ -17,7 +17,8 @@
 		"-lunr", 
 		"-search", 
 		"search-pro",
-		"splitter"
+		"splitter",
+		"advanced-emoji"
 	],
 	"pluginsConfig": {	
 		"page-footer-ex": {

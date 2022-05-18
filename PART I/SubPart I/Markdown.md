@@ -41,11 +41,15 @@ Being a line with `1. ` to start a numbered list. Use `Tab` to go one level deep
 
 Begin a line with `> ` to create a block quote.
 
+## **🐮** **emoji markup**
+😊 	_😃_ 	😴
 
+[Complete list of github markdown emoji markup](https://gist.github.com/rxaviers/7360908)
 
 # References
 
-https://docs.gitbook.com/editing-content/markdown
+[Markdown 入门参考](http://xianbai.me/learn-md/article/about/readme.html)
 
-[ Markdown 中文文档](https://markdown-zh.readthedocs.io/en/latest/) (translated from https://daringfireball.net/projects/markdown/syntax)
+[Markdown 基本语法](https://markdown.com.cn/basic-syntax/)
 
+[Markdown 菜鸟教程](https://www.runoob.com/markdown/md-tutorial.html)
